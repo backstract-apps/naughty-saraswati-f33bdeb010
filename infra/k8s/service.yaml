@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: naughty-saraswati-f33bdeb010-srv
+  namespace: apps-release
+spec:
+  selector:
+    app: naughty-saraswati-f33bdeb010
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 7070
+  type: ClusterIP
